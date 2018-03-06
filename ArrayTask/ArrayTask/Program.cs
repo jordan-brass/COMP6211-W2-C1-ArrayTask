@@ -34,6 +34,12 @@ namespace ArrayTask
             Console.WriteLine($"The 5th instance of each array is {courseIDs2[4]} and {courseNames2[4]}");
             Console.WriteLine("Would you like to search the Course IDs or the Course Names?");
             string searchChoice = Console.ReadLine();
+            if (searchChoice == "IDs"|| searchChoice == "Ids" || searchChoice == "ids" || searchChoice == "IDS")
+            {
+                Console.WriteLine("What Course ID are you looking for ");
+                string idSearch = Console.ReadLine();
+                
+            }
             //Console.WriteLine("Which number in the arrays would you like to view");
             //int searchSelectConsole = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine($"The items at location {searchSelectConsole} are {courseIDs2[searchSelectConsole]} and {courseNames2[searchSelectConsole]}");
